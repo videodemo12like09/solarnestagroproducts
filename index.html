@@ -329,6 +329,70 @@
             font-size: 15px;
         }
 
+
+
+
+/* WHY CHOOSE US */
+
+.why-section {
+    background: #ffffff;
+}
+
+.why-container {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: #f7faf7;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #e2ebe4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.why-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7f3e9;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.why-card h3 {
+    color: #176b3a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: #68756b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+        
       /* PRODUCTS */
 .products {
     display: grid;
@@ -688,25 +752,25 @@
 </section>
 
 
-<!-- WHY US -->
-<section class="section">
+<!-- WHY CHOOSE US -->
+<section class="section why-section" id="why">
 
     <div class="section-title">
 
         <h2>Why Choose Us</h2>
 
         <p>
-            Our business approach is built around
-            professional and reliable service.
+            Our business approach is built around quality,
+            reliability and professional service.
         </p>
 
     </div>
 
-    <div class="features">
+    <div class="why-container">
 
-        <div class="feature">
+        <div class="why-card">
 
-            <div class="feature-icon">🌱</div>
+            <div class="why-icon">🌾</div>
 
             <h3>Agricultural Focus</h3>
 
@@ -718,9 +782,9 @@
         </div>
 
 
-        <div class="feature">
+        <div class="why-card">
 
-            <div class="feature-icon">✓</div>
+            <div class="why-icon">✓</div>
 
             <h3>Quality Approach</h3>
 
@@ -732,9 +796,9 @@
         </div>
 
 
-        <div class="feature">
+        <div class="why-card">
 
-            <div class="feature-icon">🤝</div>
+            <div class="why-icon">🤝</div>
 
             <h3>Customer Support</h3>
 
@@ -748,7 +812,6 @@
     </div>
 
 </section>
-
 
 <!-- PRODUCTS -->
 
