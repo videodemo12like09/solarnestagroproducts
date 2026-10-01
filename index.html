@@ -98,12 +98,37 @@
             margin-bottom: 22px;
         }
 
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #edf7ef;
-        }
+       .hero-tagline {
+    font-size: 23px;
+    font-weight: 700;
+    max-width: 800px;
+    margin: 0 auto 12px;
+    color: #ffffff;
+}
+
+.hero-description {
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #e4f1e7;
+}
+
+.hero-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.hero-products span {
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background: rgba(255,255,255,0.08);
+}
 
         .buttons {
             display: flex;
@@ -404,6 +429,8 @@
 
 
 <!-- HERO -->
+
+    
 <section class="hero" id="home">
 
     <div class="hero-content">
@@ -413,15 +440,29 @@
             AGRO PRODUCTS
         </h1>
 
-        <p>
-            Agricultural Products & Business Solutions
-            from Surat, Gujarat
+        <p class="hero-tagline">
+            Quality Agricultural Commodities from Gujarat
         </p>
+
+        <p class="hero-description">
+            We deal in agricultural commodities including
+            rice, wheat, maize and millets for various
+            business requirements.
+        </p>
+
+        <div class="hero-products">
+
+            <span>🌾 Rice</span>
+            <span>🌾 Wheat</span>
+            <span>🌽 Maize</span>
+            <span>🌱 Millets</span>
+
+        </div>
 
         <div class="buttons">
 
-            <a href="#about" class="btn btn-primary">
-                About Us
+            <a href="#products" class="btn btn-primary">
+                View Products
             </a>
 
             <a href="#contact" class="btn btn-outline">
