@@ -192,7 +192,7 @@
         }
 
         /* ABOUT */
-      /* ABOUT */
+     
 
 .about-container {
     max-width: 1100px;
@@ -391,44 +391,76 @@
 }
 
         /* CONTACT */
-        .contact-section {
-            background: #edf5ee;
-        }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 35px;
-        }
+.contact-section {
+    background: #f4f8f4;
+}
 
-        .contact-card {
-            background: white;
-            padding: 35px;
-            border-radius: 14px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
+.contact-container {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
 
-        .contact-card h3 {
-            color: #1d6b3b;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
+.contact-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
 
-        .contact-item {
-            margin-bottom: 18px;
-        }
+.contact-card:hover {
+    transform: translateY(-6px);
+}
 
-        .contact-item strong {
-            display: block;
-            color: #26382b;
-            margin-bottom: 4px;
-        }
+.contact-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
 
-        .contact-item a {
-            color: #1d6b3b;
-            text-decoration: none;
-            word-break: break-word;
-        }
+.contact-card h3 {
+    color: #176b3a;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #68756b;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.contact-card a {
+    color: #176b3a;
+    text-decoration: none;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #176b3a;
+    color: #ffffff !important;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-btn:hover {
+    background: #0f4d29;
+}
+
+@media (max-width: 800px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
 
         /* FOOTER */
         footer {
@@ -819,98 +851,72 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact-section" id="contact">
+<section class="section contact-section" id="contact">
 
-    <div class="section">
+    <div class="section-title">
 
-        <div class="section-title">
+        <h2>Contact Us</h2>
 
-            <h2>Contact Us</h2>
+        <p>
+            For product enquiries and business information,
+            feel free to contact us.
+        </p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">📍</div>
+
+            <h3>Our Location</h3>
 
             <p>
-                Get in touch with SOLAR NEST AGRO PRODUCTS.
+                321-Skyview Complex,<br>
+                Sarthana Jakatnaka,<br>
+                Surat, Gujarat, India
             </p>
 
         </div>
 
-        <div class="contact-grid">
 
-            <div class="contact-card">
+        <div class="contact-card">
 
-                <h3>Business Details</h3>
+            <div class="contact-icon">📞</div>
 
-                <div class="contact-item">
+            <h3>Phone</h3>
 
-                    <strong>Business Name</strong>
-
-                    SOLAR NEST AGRO PRODUCTS
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>Address</strong>
-
-                    321-Skyview Complex,<br>
-                    Sarthana Jakatnaka,<br>
-                    Surat, Gujarat 398185,<br>
-                    India
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>Phone</strong>
-
-                    <a href="tel:+919512295122">
-                        +91 9512295122
-                    </a>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <strong>Email</strong>
-
-                    <a href="mailto:solarnest@gmail.com">
-                        solarnest@gmail.com
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-card">
-
-                <h3>Business Enquiry</h3>
-
-                <p>
-                    For agricultural product information,
-                    availability or general business enquiries,
-                    please contact us by phone or email.
-                </p>
-
-                <br>
-
-                <a
-                    href="tel:+919512295122"
-                    class="btn btn-primary">
-                    Call Us
+            <p>
+                <a href="tel:+919512295122">
+                    +91 9512295122
                 </a>
+            </p>
 
-                <br><br>
+            <a href="tel:+919512295122"
+               class="contact-btn">
+                Call Us
+            </a>
 
-                <a
-                    href="mailto:solarnest@gmail.com"
-                    class="btn btn-primary">
-                    Email Us
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">✉️</div>
+
+            <h3>Email</h3>
+
+            <p>
+                <a href="mailto:solarnest@gmail.com">
+                    solarnest@gmail.com
                 </a>
+            </p>
 
-            </div>
+            <a href="mailto:solarnest@gmail.com"
+               class="contact-btn">
+                Email Us
+            </a>
 
         </div>
 
